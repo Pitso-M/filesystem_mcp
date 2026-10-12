@@ -38,7 +38,8 @@ An MCP server that gives Claude Desktop sandboxed read/write access to the local
    ```
    **Important:** Do not use wildcards (e.g. `\*`) in `FS_ALLOWED_ROOTS`. Paths are matched using `os.path.realpath()`, which treats `\*` as a literal directory name. Access to all files and subdirectories under each root is granted automatically.
 
-3. Add the server to `claude_desktop_config.json`:
+3. Add the server to your preferred MCP client, example shown for claude desktop
+edit the file:`claude_desktop_config.json`:
    ```json
    {
      "mcpServers": {
@@ -50,8 +51,6 @@ An MCP server that gives Claude Desktop sandboxed read/write access to the local
      }
    }
    ```
-
-4. Restart Claude Desktop.
 
 ## Security
 
